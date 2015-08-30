@@ -31,7 +31,7 @@ namespace Discord
 		/// <summary> Returns the string "&lt;@Id&gt;" to be used as a shortcut when including mentions in text. </summary>
 		public string Mention => $"<@{Id}>";
 
-		public string PrivateChannelId { get; internal set; }
+		public string PrivateChannelId { get; set; }
 		public Channel PrivateChannel => _client.GetChannel(PrivateChannelId);
 
 		//TODO: Add voice
